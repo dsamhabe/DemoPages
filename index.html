@@ -17,6 +17,8 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+
+				<!--Startup Slide-->
 				<section id="startSlide">
 					<div class="mediaWithDescription">
 						<div id="startPageMedia">
@@ -39,10 +41,12 @@
 						</div>
 					</div>
 				</section>
+
+				<!--SnakeSlide-->
 				<section id="snakeSlide">
+					<p>Snake-Game</p>
 					<section>
-						<p>Snake-Game</p>
-						<video class="videoDisplay" data-autoplay src="docs/media/SnakeAufzeichnung1.mp4"></video>
+						<video id="snakeVideo" class="videoDisplay" data-autoplay src="docs/media/SnakeAufzeichnung1.mp4"></video>
 					</section>
 					<section>
 					<div class="mediaWithDescription">
@@ -66,8 +70,39 @@
 						</div>
 					</div>
 				</section>
+
+				<!--Pac-Man Slide -->
 				</section>
-				<section id="pacmanSlide">Pac-Man<br><img src="docs/media/PacManAufzeichnung.mp4" alt="Missing Image"></section>
+				<section id="pacmanSlide"><p>Pac-Man</p>
+					<section>
+					<div class="mediaWithDescription">
+						<div class="mediaDisplay">
+						<video data-autoplay src="docs/media/PacManAufzeichnung.mp4"></video>
+						</div>
+						<div class="descriptionBox">
+							<span class="description">
+								Ein weiterer Klassiker aus der Videospielgeschichte.<br>
+								Die meisten werden den gelben, mampfenden Charakter bereits aus ihrer Kindheit kennen.
+								<br><br>
+								Spielregeln:
+								<br>
+								Pac-Man wird mit den Pfeiltasten gesteuert. Sein Ziel ist es, alle gelben Punkte
+								einzusammeln, ohne dass er dabei von einem der Geister berührt wird.<br>
+								Pac-Man kann außerdem Power-Ups essen. Hat er ein Power-Up erwischt, kann er die Geister
+								berühren, ohne dass sie ihm Schaden zufügen.
+							</span>
+						</div>
+					</div>
+					</section>
+					<section>
+						<div class="imagesWithDescription">
+							<div class="imageBox">
+								<img
+							</div>
+						</div>
+					</section>
+				</section>
+
 				<section id="minesweeperSlide">Minesweeper<br><img src="docs/media/" alt="Missing Image"></section>
 				<section id="quizgameSlide">Quiz-Spiel<br><img src="docs/media/" alt="Missing Image"></section>
 				<section id="sspSlide">Schere Stein Papier<br><img src="docs/media/" alt="Missing Image"></section>
@@ -86,8 +121,8 @@
 			//Todo: Activate autoSlide when development is finished
 			Reveal.initialize({
 				hash: true,
-				// autoSlide: 5000,
-				// loop: true,
+				autoSlide: 5000,
+				loop: true,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
