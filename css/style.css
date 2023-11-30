@@ -4,6 +4,8 @@
     height: 90vh;
 }
 .mediaDisplay {
+    display: flex;
+    vertical-align: top;
     height: 100%;
     width: 40%;
 }
