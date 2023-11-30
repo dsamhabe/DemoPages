@@ -12,6 +12,8 @@
 .mediaDisplay {
     height: 75%;
     width: 50%;
+    background-color: #2c2a2a;
+    border-radius: 10px;
 }
 .descriptionBox {
     display: flex;
