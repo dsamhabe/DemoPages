@@ -18,15 +18,31 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>3.Klasse <br> <img src="docs/media/" alt="Missing Image"></section>
-				<section><p>Snake Spiel</p>
+				<section>
+					<section>
+					<p>Snake-Game</p>
+					</section>
+					<section>
 					<div class="mediaWithDescription">
 						<div class="mediaDisplay">
 							<video class="videoDisplay" data-autoplay src="docs/media/SnakeAufzeichnung1.mp4"></video>
 						</div>
 						<div class="descriptionBox">
-							<p style="line-break: normal">Hier kommt der Erklär Text für das Snake Spiel hin</p>
+							<p class="description">
+								Hier wurde das Retro-Spiel Snake entwickelt. Das Spiel wurde in Teams von zwei bis drei
+								Leuten programmiert.
+								<br><br>
+								Spielregeln:
+								<br>
+								Bei dem Spiel Snake muss eine Schlange Futterhappen aufsammeln, um länger
+								zu werden. Nach jedem Happen wird die Schlange um einen Block länger. Kollidiert die
+								Schlange mit einem Hindernis oder dem Spielfeldrand, wird das Spiel beendet.
+								Ziel des Spiels ist es, alle Futterhappen aufzusammeln, sodass die Schlange das ganze
+								Spielfeld ausfüllt.
+							</p>
 						</div>
 					</div>
+				</section>
 				</section>
 				<section>Pac-Man<br><img src="docs/media/PacManAufzeichnung.mp4" alt="Missing Image"></section>
 				<section>Minesweeper<br><img src="docs/media/" alt="Missing Image"></section>
@@ -43,10 +59,12 @@
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
+
+			//Todo: Activate autoSlide when development is finished
 			Reveal.initialize({
 				hash: true,
-				autoSlide: 5000,
-				loop: true,
+				// autoSlide: 5000,
+				// loop: true,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
