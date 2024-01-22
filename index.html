@@ -47,7 +47,7 @@
 				<section id="snakeSlide">
 					<p>Snake-Game</p>
 					<section>
-						<video id="snakeVideo" class="videoDisplay" data-autoplay src="docs/media/SnakeAufzeichnung1.mp4"></video>
+						<video id="snakeVideo" class="videoDisplay" src="docs/media/SnakeAufzeichnung1.mp4"></video>
 					</section>
 					<section>
 					<div class="mediaWithDescription">
@@ -57,8 +57,7 @@
 						<div class="descriptionBox">
 							<span class="description">
 								Hier wurde das Retro-Spiel Snake entwickelt. <br>
-								Das Spiel wurde in Teams von zwei bis drei
-								Leuten programmiert.
+								Das Spiel wurde in Teams von zwei bis drei Leuten programmiert.
 								<br><br>
 								Spielregeln:
 								<br>
@@ -71,14 +70,14 @@
 						</div>
 					</div>
 				</section>
+				</section>
 
 				<!-- Pac-Man Slide -->
-				</section>
 				<section id="pacmanSlide"><p>Pac-Man</p>
 					<section>
 					<div class="mediaWithDescription">
 						<div class="mediaDisplay">
-						<video data-autoplay src="docs/media/PacManAufzeichnung.mp4"></video>
+						<video src="docs/media/PacManAufzeichnung.mp4"></video>
 						</div>
 						<div class="descriptionBox">
 							<span class="description">
@@ -105,12 +104,41 @@
 				</section>
 
 				<!-- Minesweeper Slide -->
-				<section id="minesweeperSlide">Minesweeper<br><img src="docs/media/" alt="Missing Image"></section>
+				<!-- TODO: Create Media for Minesweeper -->
+				<section id="minesweeperSlide">
+					<p>Minesweeper</p>
+					<section>
+						<video id="minesweeperVideo" class="videoDisplay" src="docs/media/"></video>
+					</section>
+					<section>
+						<div class="mediaWithDescription">
+							<div class="mediaDisplay">
+								<img class="imageDisplay" src="docs/media/" alt="Missing Image">
+							</div>
+							<div class="descriptionBox">
+							<span class="description">
+								Einige werden auch dieses Urgestein der Videospielgeschichte wiedererkennen. <br>
+								Dieses Projekt wurde in Einzelarbeit umgesetzt.
+								<br><br>
+								Spielregeln:
+								<br>
+								Bei dem Spiel Minesweeper muss man alle Felder aufdecken, die keine Mienen besitzen.
+								Die Felder können Zahlen beinhalten, welche repräsentieren, wie viele Mienen sich in
+								ihrer Umgebung befinden. Felder, die keine Miene enthalten, kann man mit Rechtsklick
+								markieren, um sich leichter zu merken, wo sich Mienen befinden. Hat der Spieler alle
+								Felder ohne Miene geklickt, hat er gewonnen.
+							</span>
+							</div>
+						</div>
+					</section>
+				</section>
 
 				<!-- Quizgame Slide -->
+				<!-- TODO: Create Media for quizgame slide -->
 				<section id="quizgameSlide">Quiz-Spiel<br><img src="docs/media/" alt="Missing Image"></section>
 
 				<!--- Schere Stein Papier Slide -->
+				<!--- TODO: Create media for Schere Stein Papier Slide -->
 				<section id="sspSlide">Schere Stein Papier<br><img src="docs/media/" alt="Missing Image"></section>
 			</div>
 		</div>
@@ -125,13 +153,15 @@
 			// - https://revealjs.com/config/
 
 			//Todo: Activate autoSlide when development is finished
-			// Reveal.initialize({
-			// 	hash: true,
-			// 	autoSlide: 5000,
-			// 	loop: true,
-			// 	// Learn about plugins: https://revealjs.com/plugins/
-			// 	plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			// });
+			Reveal.initialize({
+				hash: true,
+				autoSlide: 5000,
+				loop: true,
+				autoPlayMedia: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
 		</script>
 	</body>
 </html>
