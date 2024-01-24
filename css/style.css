@@ -72,9 +72,12 @@ h1 {
     border-radius: 10px;
 }
 #snakeVideo {
-    margin-top: 5rem;
+    margin: 5rem 0 0 0;
 }
 #minesweeperVideo {
+    margin: 5rem 0 0 0;
+}
+#sspVideo {
     margin: 5rem 0 0 0;
 }
 
