@@ -47,7 +47,9 @@
 				<section id="snakeSlide">
 					<p>Snake-Game</p>
 					<section>
-						<video data-autoplay id="snakeVideo" class="videoDisplay" src="docs/media/snake/SnakeAufzeichnung1.mp4"></video>
+						<video data-autoplay id="snakeVideo" class="videoDisplay"
+							   src="docs/media/snake/SnakeAufzeichnung1.mp4">
+						</video>
 					</section>
 					<section>
 					<div class="mediaWithDescription">
@@ -77,7 +79,7 @@
 					<section>
 					<div class="mediaWithDescription">
 						<div class="mediaDisplay">
-						<video data-autoplay src="docs/media/pacman/PacManAufzeichnung.mp4"></video>
+						<video id="pacmanVideo" data-autoplay src="docs/media/pacman/PacManAufzeichnung.mp4"></video>
 						</div>
 						<div class="descriptionBox">
 							<span class="description">
@@ -96,8 +98,8 @@
 					</section>
 					<section>
 						<div class="imagesWithDescription">
-							<div class="imageBox">
-								<img alt="Missing image" src="docs/media/pacman/Blinky.png">
+							<div class="imagesBox">
+								<img class="pacmanImage" alt="Missing image" src="docs/media/pacman/Blinky.png">
 							</div>
 						</div>
 					</section>
@@ -108,7 +110,9 @@
 				<section id="minesweeperSlide">
 					<p>Minesweeper</p>
 					<section>
-						<video data-autoplay id="minesweeperVideo" class="videoDisplay" src="docs/media/minesweeper/MinesweeperAufzeichnung.mp4"></video>
+						<video data-autoplay id="minesweeperVideo" class="videoDisplay"
+							   src="docs/media/minesweeper/MinesweeperAufzeichnung.mp4">
+						</video>
 					</section>
 					<section>
 						<div class="mediaWithDescription">
@@ -117,30 +121,40 @@
 										class="imageDisplay fragment custom hide"
 										src="docs/media/minesweeper/PlayingFieldSmall.png"
 										alt="Missing Image"
+										data-fragment-index="1"
 								>
 								<img
-										class="imageDisplay fragment fade-in-then-out"
+										class="imageDisplay fragment custom hide"
 										src="docs/media/minesweeper/PlayingFieldNormal.png"
 										alt="Missing Image"
+										data-fragment-index="2"
 								>
 								<img
-										class="imageDisplay fade-in-then-out"
+										class="imageDisplay fragment custom hide"
 										src="docs/media/minesweeper/PlayingFieldBig.png"
 										alt="Missing Image"
+										data-fragment-index="3"
 								>
 							</div>
 							<div class="descriptionBox">
 							<span class="description">
-								Einige werden auch dieses Urgestein der Videospielgeschichte wiedererkennen. <br>
-								Dieses Projekt wurde in Einzelarbeit umgesetzt.
-								<br><br>
-								Spielregeln:
+								Das Spiel kann man in drei Schwierigkeitsstufen spielen.
 								<br>
-								Bei dem Spiel Minesweeper muss man alle Felder aufdecken, die keine Mienen besitzen.
-								Die Felder können Zahlen beinhalten, welche repräsentieren, wie viele Mienen sich in
-								ihrer Umgebung befinden. Felder, die keine Miene enthalten, kann man mit Rechtsklick
-								markieren, um sich leichter zu merken, wo sich Mienen befinden. Hat der Spieler alle
-								Felder ohne Miene geklickt, hat er gewonnen.
+								Die Schwierigkeit wird dabei durch die Größe des Spielfelds bestimmt.
+								<br>
+								<br>
+								Zur Auswahl stehen folgende Schwierigkeiten:
+								<br>
+								<br>
+								<ul>
+									<li class="fragment fade-up spacedList" data-fragment-index="1"
+										style="font-size: 0.8rem">Leicht
+									</li>
+									<li class="fragment fade-up spacedList" data-fragment-index="2">Mittel</li>
+									<li class="fragment fade-up spacedList" data-fragment-index="3"
+										style="font-size: 1.4rem">Schwer
+									</li>
+								</ul>
 							</span>
 							</div>
 						</div>
@@ -148,7 +162,6 @@
 				</section>
 
 				<!-- Quizgame Slide -->
-				<!-- TODO: Create Media for quizgame slide -->
 				<section id="quizgameSlide">
 					<p>Quiz-Spiel</p>
 					<section>
@@ -183,15 +196,13 @@
 									Im Hauptmenü kann man einige Informationen finden:
 									<br><br>
 									<ul>
-										<li>Eine Übersicht über alle spielbaren Quizze</li>
-										<li>Die besten Spieler, wenn man ein Quiz auswählt</li>
-										<li>Die Spieler mit den meisten Punkten insgesamt</li>
+										<li class="fragment fade-up">Eine Übersicht über alle spielbaren Quizze</li>
+										<li class="fragment fade-up">Die besten Spieler, wenn man ein Quiz auswählt</li>
+										<li class="fragment fade-up">Die Spieler mit den meisten Punkten insgesamt</li>
 									</ul>
 									<br>
-									<br>
-									Wenn man ein Quiz ausgewählt hat, kann man mit einem Klick auf Play das Quiz-Spiel
-									starten.
-									<br>
+									<p class="fragment fade-up"> Wenn man ein Quiz ausgewählt hat, kann man mit einem Klick auf Play das Quiz-Spiel
+									starten.</p>
 									<img class="arrowDown" src="docs/media/ArrowDown.png" alt="">
 								</span>
 								</div>
@@ -266,7 +277,7 @@
 				<!--- Schere Stein Papier Slide -->
 				<section id="sspSlide">
 					<p>Schere Stein Papier</p>
-					<section>
+					<section data-autoslide="2900">
 						<div class="mediaWithDescription">
 							<div class="descriptionBox">
 								<span class="description">
@@ -277,9 +288,9 @@
 									<br>
 									<br>
 									Die Auswahl des Spielers wird
-									<span class="fragment highlight-green">grün</span>
+									<span class="fragment highlight-green" data-autoslide="2200">grün</span>
 									eingefärbt, die des Computers
-									<span class="fragment highlight-red">rot.</span>
+									<span class="fragment highlight-red" data-autoslide="5000">rot.</span>
 									<br>
 									<br>
 									Mit einem Klick auf "Noch Einmal!" kann man erneut antreten. In der Mitte werden
@@ -325,9 +336,9 @@
 
 			//Todo: Activate autoSlide when development is finished
 			Reveal.initialize({
-				hash: true,
-				// autoSlide: 5000,
-				// loop: true,
+				// hash: true,
+				// autoSlide: 7500,
+				loop: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
