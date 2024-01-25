@@ -1,3 +1,4 @@
+/*Global CSS rules*/
 *{
     font-family: "Century Gothic", serif;
 }
@@ -9,6 +10,7 @@ h1 {
     font-size: 2rem;
 }
 
+/*CSS Classes*/
 .mediaWithDescription {
     display: flex;
     justify-content: space-between;
@@ -56,6 +58,15 @@ h1 {
     text-align: center;
 }
 
+/*TODO: Move Arrow do Center*/
+.arrowDown {
+    text-align: center;
+    height: 33%;
+    width: 33%;
+    margin: auto;
+}
+
+/*CSS ID's*/
 #startPageMedia {
     font-size: 2rem;
     height: 90%;
@@ -81,10 +92,7 @@ h1 {
     margin: 5rem 0 0 0;
 }
 
-/*TODO: Move Arrow do Center*/
-.arrowDown {
-    text-align: center;
-    height: 33%;
-    width: 33%;
-    margin: auto;
+/*Custom Fragments*/
+.fragment.hide {
+    display: none;
 }

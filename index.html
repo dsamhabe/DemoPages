@@ -112,10 +112,22 @@
 					</section>
 					<section>
 						<div class="mediaWithDescription">
-							<div class="fourMediaDisplay">
-								<img class="threeImageDisplay" src="docs/media/minesweeper/PlayingFieldSmall.png" alt="Missing Image">
-								<img class="threeImageDisplay" src="docs/media/minesweeper/PlayingFieldNormal.png" alt="Missing Image">
-								<img class="threeImageDisplay" src="docs/media/minesweeper/PlayingFieldBig.png" alt="Missing Image">
+							<div class="mediaDisplay">
+								<img
+										class="imageDisplay fragment custom hide"
+										src="docs/media/minesweeper/PlayingFieldSmall.png"
+										alt="Missing Image"
+								>
+								<img
+										class="imageDisplay fragment fade-in-then-out"
+										src="docs/media/minesweeper/PlayingFieldNormal.png"
+										alt="Missing Image"
+								>
+								<img
+										class="imageDisplay fade-in-then-out"
+										src="docs/media/minesweeper/PlayingFieldBig.png"
+										alt="Missing Image"
+								>
 							</div>
 							<div class="descriptionBox">
 							<span class="description">
@@ -252,30 +264,8 @@
 				</section>
 
 				<!--- Schere Stein Papier Slide -->
-				<!--- TODO: Create media for Schere Stein Papier Slide -->
 				<section id="sspSlide">
 					<p>Schere Stein Papier</p>
-					<section>
-						<div class="mediaWithDescription">
-							<div class="descriptionBox">
-								<span class="description">
-									Dieses Spiel wurde bereits letztes Jahr am Tag der offenen Tür der HTL Steyr
-									präsentiert und darf heuer auch nicht fehlen.
-									<br>
-									<br>
-									Das überall bekannte Langeweile-Spiel "Schere Stein Papier" wurde in zweier Teams
-									entwickelt.
-									<br>
-									<br>
-									Egal ob Schere Stein Papier, Schnick Schnack Schnuck oder Ching Chang Chong, die
-									Spielregeln sind jedem bekannt.
-								</span>
-							</div>
-							<div class="mediaDisplay">
-								<img src="docs/media/ssp/NoSelection.png" alt="Schere Stein Papier">
-							</div>
-						</div>
-					</section>
 					<section>
 						<div class="mediaWithDescription">
 							<div class="descriptionBox">
@@ -286,7 +276,10 @@
 									seine Entscheidung.
 									<br>
 									<br>
-									Die Auswahl des Spielers wird grün eingefärbt, die des Computers rot.
+									Die Auswahl des Spielers wird
+									<span class="fragment highlight-green">grün</span>
+									eingefärbt, die des Computers
+									<span class="fragment highlight-red">rot.</span>
 									<br>
 									<br>
 									Mit einem Klick auf "Noch Einmal!" kann man erneut antreten. In der Mitte werden
