@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
 	</head>
-	<body>
+	<body id="body">
 		<div class="reveal">
 			<div class="slides">
 
@@ -237,8 +237,6 @@
 									<br>
 									Mit einem Klick auf den "Play" Button wird man ins Hauptmenü weitergeleitet, in dem
 									man einige Optionen hat.
-									<br>
-									<img class="arrowDown" src="docs/media/ArrowDown.png" alt="">
 								</span>
 							</div>
 						</div>
@@ -261,7 +259,6 @@
 									<br>
 									<p class="fragment fade-up"> Wenn man ein Quiz ausgewählt hat, kann man mit einem Klick auf Play das Quiz-Spiel
 									starten.</p>
-									<img class="arrowDown" src="docs/media/ArrowDown.png" alt="">
 								</span>
 								</div>
 							</div>
@@ -292,8 +289,10 @@
 					<section>
 						<div class="mediaWithDescription">
 							<div class="mediaDisplay">
-								<img src="docs/media/quizgame/CorrectAnswer.png" alt="Missing Image">
-								<img src="docs/media/quizgame/IncorrectAnswer.png" alt="Missing Image">
+								<img class="fragment custom hide" data-fragment-index="1"
+									 src="docs/media/quizgame/CorrectAnswer.png" alt="Missing Image">
+								<img class="fragment custom hide" data-fragment-index="2"
+									 src="docs/media/quizgame/IncorrectAnswer.png" alt="Missing Image">
 							</div>
 							<div class="descriptionBox">
 								<span class="description">
@@ -301,11 +300,19 @@
 									oder falsch gekennzeichnet.
 									<br>
 									<br>
-									Außerdem ändern sich die Farben der Antwortmöglichkeiten auf Rot (für falsch) und
-									Grün (für Richtig).
+									Außerdem ändern sich die Farben der Antwortmöglichkeiten auf:
+									<ul style="text-decoration-line: none">
+										<br>
+										<li style="color: red"
+											class="fragment fade-up" data-fragment-index="1">Rot (falsch)</li>
+										<li style="color: lawngreen"
+											class="fragment fade-up" data-fragment-index="2">Grün (richtig)</li>
+									</ul>
 									<br>
 									<br>
-									Schauen wir mal, was passiert, wenn das Spiel zu Ende gespielt wird:
+									<span class="fragment fade-up">
+										Schauen wir mal, was passiert, wenn das Spiel zu Ende gespielt wird:
+									</span>
 								</span>
 							</div>
 						</div>
