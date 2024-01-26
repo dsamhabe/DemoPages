@@ -370,10 +370,17 @@
 					</section>
 					<section>
 						<div class="mediaWithDescription">
-							<div class="mediaDisplay">
-								<img src="docs/media/ssp/PaperGreen.png" alt="Schere Stein Papier">
-								<img src="docs/media/ssp/PaperRed.png" alt="Schere Stein Papier">
-								<img src="docs/media/ssp/PaperRedGreen.png" alt="Schere Stein Papier">
+							<div class="fourMediaDisplay">
+								<div class="fourMediaDisplayContainer">
+									<img class="fragment fade-up" data-fragment-index="1"
+										 src="docs/media/ssp/PaperGreen.png" alt="Schere Stein Papier">
+									<img class="fragment fade-up" data-fragment-index="2"
+										 src="docs/media/ssp/PaperRed.png" alt="Schere Stein Papier">
+								</div>
+								<div class="fourMediaDisplayContainer">
+									<img class="fragment fade-up" data-fragment-index="3"
+										 src="docs/media/ssp/PaperRedGreen.png" alt="Schere Stein Papier">
+								</div>
 							</div>
 							<div class="descriptionBox">
 								<span class="description">
@@ -382,6 +389,19 @@
 									<br>
 									Für den Fall, dass der Computer die gleiche Entscheidung wie der Spieler trifft,
 									wird die Auswahl mit einem Farbverlauf dargestellt:
+									<br>
+									<br>
+									<ul>
+										<li class="fragment fade-up" data-fragment-index="1" style="color: #31FF2C">
+											Wahl des Spielers
+										</li>
+										<li class="fragment fade-up" data-fragment-index="2" style="color: #FF2C2C">
+											Wahl des Computers
+										</li>
+										<li id="gradientText" class="fragment fade-up" data-fragment-index="3">
+											Computer und Spieler wählen gleich
+										</li>
+									</ul>
 								</span>
 							</div>
 						</div>
@@ -401,8 +421,8 @@
 
 			//Todo: Activate autoSlide when development is finished
 			Reveal.initialize({
-				// hash: true,
-				// autoSlide: 7500,
+				hash: true,
+				autoSlide: 7500,
 				loop: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
